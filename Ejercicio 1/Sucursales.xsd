@@ -1,35 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:annotation>
-        <xs:documentation>
-            <Descripción>Información de las sucursales</Descripción>
-            <Fecha>14/02/2022</Fecha>
-            <Autor>Julio Nieto Cordón</Autor>
+        <xs:documentation xml:lang="ES-es">
+        Esquema para los pedidos de Los Remedios SA
+        <fecha>14/2/2022</fecha>
+        <autor>Julio Nieto</autor>
         </xs:documentation>
     </xs:annotation>
-    <xs:element name="Sucursales">
+    <xs:element name="Los_remedios">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Sucursal" maxOccurs="unbounded"> 
+                <xs:element name="pedidos">
                     <xs:complexType>
-                        <xs:attribute name="código" type="SucursalCódigo"/>
-                    </xs:complexType>
-                </xs:element>   
                         <xs:sequence>
-                                <xs:element name="Pedido" type="xs:string"></xs:element>
+                            <xs:element name="pedido" maxOccurs="unbounded">
+                                <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Nomb_trabajador" type="xs:string"></xs:element>
-                                        <xs:element name="Fecha" type="xs:string"></xs:element>
-                                        <xs:element name="Observación" type="xs:string"></xs:element>
-                                        <xs:element name="Artículo" type="xs:string"></xs:element>
-                                            <xs:sequence>
-                                                <xs:element name="Unidades" type="xs:int"></xs:element>
-                                                <xs:element name="Precio" type="xs:int"></xs:element>
-                                                <xs:element name="Observaciones" type="xs:string"></xs:element>
-                                                <xs:element name="Plazo_de_revisión" type="xs:string"></xs:element>
-                                            </xs:sequence>
+                                        <xs:element name="cod_sucursal" type="xs:string" />
+                                        <xs:element name="nombre_trabajador" type="xs:string" />
+                                        <xs:element name="fecha_pedido" type="xs:string" />
+                                        <xs:element name="observaciones" type="xs:string" />
+                                        <xs:element name="articulos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="articulo" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="numero_unidades" type="xs:string" />
+                                                                <xs:element name="precio_unidad" type="xs:string" />
+                                                                <xs:element name="observaciones" type="xs:string" />
+                                                                <xs:element name="plazo_revision" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="cod" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
-                            </xs:sequence>
-                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
 </xs:schema>

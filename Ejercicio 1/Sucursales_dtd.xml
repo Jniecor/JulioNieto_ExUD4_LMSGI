@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Sucursales SYSTEM "Surcursales.dtd">
-<Sucursales>
-    <Sucursal código="A0000001">
-        <Pedido>
-            <Nomb_trabajador>Antonio Mendoza</Nomb_trabajador>
-            <Fecha>12/12/2022</Fecha>
-            <Observación>Urgente</Observación>
-            <Artículo código="AAA-001">
-                <Unidades>2</Unidades>
-                <Precio>10€</Precio>
-                <Observaciones>Frágil</Observaciones>
-                <Plazo_de_revisión>15/12/2022-16/12/2022</Plazo_de_revisión>
-            </Artículo>
-            <Artículo código="AAA-002">
-                <Unidades>1</Unidades>
-                <Precio>35€</Precio>
-                <Observaciones>Frágil</Observaciones>
-                <Plazo_de_revisión>15/12/2022-16/12/2022</Plazo_de_revisión>
-            </Artículo>
-        </Pedido>
-    </Sucursal>
-    <Sucursal código="A0000002">
-        <Pedido>
-            <Nomb_trabajador>Jorge Márquez</Nomb_trabajador>
-            <Fecha>14/8/2022</Fecha>
-            <Observación>Incompleto</Observación>
-            <Artículo código="AAA-003">
-                <Unidades>1</Unidades>
-                <Precio>105€</Precio>
-                <Observaciones>Frágil</Observaciones>
-                <Plazo_de_revisión>15/8/2022-17/8/2022</Plazo_de_revisión>
-            </Artículo>
-        </Pedido>
-    </Sucursal>
-</Sucursales>
+<!DOCTYPE Los_remedios SYSTEM "Surcursales.dtd">
+<Los_remedios>
+    <pedidos>
+        <pedido>
+            <cod_sucursal>A0000001</cod_sucursal>
+            <nombre_trabajador>Antonio Mendoza</nombre_trabajador>
+            <fecha_pedido>2022/02/14</fecha_pedido>
+            <observaciones>urgente</observaciones>
+            <articulos>
+                <articulo cod="AAA-001">
+                    <numero_unidades>2</numero_unidades>
+                    <precio_unidad>15€</precio_unidad>
+                    <observaciones>Frágil</observaciones>
+                    <plazo_revision>5 días</plazo_revision>
+                </articulo>
+                <articulo cod="AAA-002">
+                    <numero_unidades>5</numero_unidades>
+                    <precio_unidad>25€</precio_unidad>
+                    <observaciones>Frágil</observaciones>
+                    <plazo_revision>4 días</plazo_revision>
+                </articulo>
+            </articulos>
+        </pedido>
+        <pedido>
+            <cod_sucursal>B7654321</cod_sucursal>
+            <nombre_trabajador>José Luis Marquez</nombre_trabajador>
+            <fecha_pedido>2022/02/14</fecha_pedido>
+            <observaciones>incompleto</observaciones>
+            <articulos>
+                <articulo cod="AAA-003">
+                    <numero_unidades>7</numero_unidades>
+                    <precio_unidad>5€</precio_unidad>
+                    <observaciones>Frágil</observaciones>
+                    <plazo_revision>3 días</plazo_revision>
+                </articulo>
+            </articulos>
+        </pedido>
+    </pedidos>
+</Los_remedios>
