@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Sucursales SYSTEM "Surcursales.dtd">
+<Sucursales>
+    <Sucursal código="A0000001">
+        <Pedido>
+            <Nomb_trabajador>Antonio Mendoza</Nomb_trabajador>
+            <Fecha>12/12/2022</Fecha>
+            <Observación>Urgente</Observación>
+            <Artículo código="AAA-001">
+                <Unidades>2</Unidades>
+                <Precio>10€</Precio>
+                <Observaciones>Frágil</Observaciones>
+                <Plazo_de_revisión>15/12/2022-16/12/2022</Plazo_de_revisión>
+            </Artículo>
+            <Artículo código="AAA-002">
+                <Unidades>1</Unidades>
+                <Precio>35€</Precio>
+                <Observaciones>Frágil</Observaciones>
+                <Plazo_de_revisión>15/12/2022-16/12/2022</Plazo_de_revisión>
+            </Artículo>
+        </Pedido>
+    </Sucursal>
+    <Sucursal código="A0000002">
+        <Pedido>
+            <Nomb_trabajador>Jorge Márquez</Nomb_trabajador>
+            <Fecha>14/8/2022</Fecha>
+            <Observación>Incompleto</Observación>
+            <Artículo código="AAA-003">
+                <Unidades>1</Unidades>
+                <Precio>105€</Precio>
+                <Observaciones>Frágil</Observaciones>
+                <Plazo_de_revisión>15/8/2022-17/8/2022</Plazo_de_revisión>
+            </Artículo>
+        </Pedido>
+    </Sucursal>
+</Sucursales>

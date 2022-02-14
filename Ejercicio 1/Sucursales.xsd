@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+            <Descripción>Información de las sucursales</Descripción>
+            <Fecha>14/02/2022</Fecha>
+            <Autor>Julio Nieto Cordón</Autor>
+        </xs:documentation>
+    </xs:annotation>
+    <xs:element name="Sucursales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Sucursal" maxOccurs="unbounded"> 
+                    <xs:complexType>
+                        <xs:attribute name="código" type="SucursalCódigo"/>
+                    </xs:complexType>
+                </xs:element>   
+                        <xs:sequence>
+                                <xs:element name="Pedido" type="xs:string"></xs:element>
+                                    <xs:sequence>
+                                        <xs:element name="Nomb_trabajador" type="xs:string"></xs:element>
+                                        <xs:element name="Fecha" type="xs:string"></xs:element>
+                                        <xs:element name="Observación" type="xs:string"></xs:element>
+                                        <xs:element name="Artículo" type="xs:string"></xs:element>
+                                            <xs:sequence>
+                                                <xs:element name="Unidades" type="xs:int"></xs:element>
+                                                <xs:element name="Precio" type="xs:int"></xs:element>
+                                                <xs:element name="Observaciones" type="xs:string"></xs:element>
+                                                <xs:element name="Plazo_de_revisión" type="xs:string"></xs:element>
+                                            </xs:sequence>
+                                    </xs:sequence>
+                            </xs:sequence>
+                    </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

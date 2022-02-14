@@ -1,0 +1,13 @@
+<!ELEMENT Sucursales (Sucursal+)>
+<!ELEMENT Sucursal (Pedido+)>
+    <!ATTLIST Sucursal código ID #REQUIRED>
+<!ELEMENT Pedido (Nomb_trabajador, Fecha, Observación, Artículo*)>
+<!ELEMENT Nomb_trabajador (#PCDATA)>
+<!ELEMENT Fecha (#PCDATA)>
+<!ELEMENT Observación (#PCDATA)>
+<!ELEMENT Artículo (Unidades, Precio, Observaciones, Plazo_de_revisión)>
+    <!ATTLIST Artículo código ID #REQUIRED>
+<!ELEMENT Unidades (#PCDATA)>
+<!ELEMENT Precio (#PCDATA)>
+<!ELEMENT Observaciones (#PCDATA)>
+<!ELEMENT Plazo_de_revisión (#PCDATA)>
